@@ -32,7 +32,7 @@ const NavBar = () => {
       <div>
         <h1 className="text-5xl font-signature">Anilesh</h1>
       </div>
-      <ul className="hidden md:flex">
+      <ul className="hidden sm:flex">
         {links.map((link, index) => (
           <li
             key={index}
@@ -43,11 +43,26 @@ const NavBar = () => {
         ))}
       </ul>
       <div
-        className="cursor-pointer pr-4 z-10 text-gray-400"
+        className="cursor-pointer pr-4 z-10 text-gray-400 sm:hidden"
         onClick={() => setNav(!nav)}
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
+      {
+        nav && (
+            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+       
+        {links.map((link, index) => (
+          <li
+            key={index}
+            className="px-4 cursor-pointer capitalize py-6 text-3xl hover:scale-105 hover:text-white transition ease-in-out"
+          >
+            {link.link}
+          </li>
+        ))}
+      </ul>
+        )
+      }
     </div>
   );
 };

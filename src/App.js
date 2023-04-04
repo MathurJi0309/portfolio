@@ -1,11 +1,14 @@
 import './App.css';
+import Home from './component/Home';
 import NavBar from './component/NavBar';
+import MediaLinks from './component/MediaLinks';
 
 function App() {
   return (
     <div>
       <NavBar/>
-     <h1> hi i am here</h1>
+      <Home/>
+      <MediaLinks/>
     </div>
   );
 }
