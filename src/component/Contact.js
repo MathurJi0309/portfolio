@@ -20,10 +20,11 @@ const Contact = () => {
               type="text"
               name="email"
               placeholder="enter your Email"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
             <textarea
               name="message"
+              placeholder="Enter your message"
               rows="10"
               className="p-2 bg-transparent border-2 rounder-md text-white focus:outline-none"
             ></textarea>
