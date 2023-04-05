@@ -5,6 +5,7 @@ import MediaLinks from './component/MediaLinks';
 import About from './component/About';
 import Portfolio from './component/Portfolio';
 import Experience from './component/Experience';
+import Contact from './component/Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About/>
       <Portfolio/>
       <Experience/>
+      <Contact/>
       <MediaLinks/>
     </div>
   );
