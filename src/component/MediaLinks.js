@@ -34,7 +34,7 @@ const links = () => {
         <HiOutlineMail size={25} />
       </>
       ),
-      href:'https://www.linkedin.com/in/anilesh-mathur-/',
+      href:"mailto:mathujijsscn@gmail.com?subject = Feedback&body = Message",
     }
     ,{
       id:4,

@@ -1,36 +1,48 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import Ecommerce from "../assets/portfolio/E-commerce.jpg";
+import weather from "../assets/portfolio/weather.jpg";
+import netflix from "../assets/portfolio/netflix.jpg";
+import responsive from "../assets/portfolio/responsive design.jpg";
+import portfolio from "../assets/portfolio/portfolio.jpg";
+import live from "../assets/portfolio/livesearch.jpg";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: Ecommerce,
+      link:'https://mathurji-commerce.netlify.app/',
+      github:'https://github.com/MathurJi0309/Ecommerce'
     },
     {
       id: 2,
-      src: reactParallax,
+      src: weather,
+      link:'https://mjweatherapphi.netlify.app/',
+      github:'https://github.com/MathurJi0309/weather_app'
     },
     {
       id: 3,
-      src: navbar,
+      src: netflix,
+      link:'https://netfilxmj.netlify.app/',
+      github:'https://github.com/MathurJi0309/Netflix'
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: responsive,
+      link:'https://potfoliomj.netlify.app/',
+      github:'https://github.com/MathurJi0309/Ecommerce'
     },
     {
       id: 5,
-      src: installNode,
+      src: portfolio,
+      link:'https://mathurji-commerce.netlify.app/',
+      github:'https://github.com/MathurJi0309/portfolio'
     },
     {
       id: 6,
-      src: reactWeather,
+      src: live,
+      link:'https://superheromj.netlify.app/',
+      github:'https://github.com/MathurJi0309/SuperHeroReactJS'
     },
   ];
 
@@ -48,7 +60,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src ,link,github}) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -57,10 +69,10 @@ const Portfolio = () => {
               />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
+                  <a href={link} target="_black">Demo</a>
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
+                  <a href={github} target="_black">Code</a>
                 </button>
               </div>
             </div>
